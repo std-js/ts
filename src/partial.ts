@@ -1,15 +1,7 @@
-import { Maybe } from './maybe';
+import type { Maybe } from './maybe';
 
-export type NonPartialType =
-    | Array<any>
-    | Date
-    | RegExp
-    | Function
-    | string
-    | number
-    | boolean
-    | null
-    | undefined;
+// eslint-disable-next-line @typescript-eslint/array-type
+export type NonPartialType = Array<any> | Date | RegExp | Function | string | number | boolean | null | undefined;
 
 export type PartialMaybe<T> = {
     [P in keyof T]: Maybe<T[P]>;

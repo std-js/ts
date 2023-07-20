@@ -176,3 +176,6 @@ Temporary Items
 # Editors
 .vscode/
 .idea/
+
+# Output
+lib/
